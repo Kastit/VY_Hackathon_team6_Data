@@ -1,0 +1,14 @@
+{
+    "JARDINERA": {
+        "fullTime": 10,
+        "partTime": 11
+    },
+    "EQUIPAJES": {
+        "fullTime": 12,
+        "partTime": 10
+    },
+    "COORDINADOR": {
+        "fullTime": 15,
+        "partTime": 16
+    }
+}
