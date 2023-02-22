@@ -122,6 +122,13 @@ if __name__ == '__main__':
         df_output = df_output.append(df)
 
     print('------------------------------------------------------------------------------------------------------------------')
+    
+    df_output.rename(columns={'day': 'Day', 'hour': 'Hour', 'handling_function': 'HandlingFunction',
+                              'Full-time Employees': 'FullTimeEmployees', \
+                              'Part-time Employees': 'PartTimeEmployees', 'Total Employees': 'TotalEmployees',
+                              'Full-time Employees cost': 'FullTimeEmployeesCost', \
+                              'Full-part Employees cost': 'FullPartEmployeesCost', 'Total cost': 'TotalCost'},
+                     inplace=True)
 
     df_output.to_csv('output.csv', sep=';', index=False)
 
